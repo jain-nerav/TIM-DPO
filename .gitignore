@@ -1,0 +1,51 @@
+# Python environments
+.venv/
+.benchvenv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# All training outputs and checkpoints
+/outputs/
+/debug_output/
+**/checkpoint-*/
+**/checkpoints/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.gguf
+
+# Model binary weights
+pytorch_model*.bin
+training_args.bin
+
+# Experiment results and generated logs
+/results/
+/trash/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+*.log
+
+# External HarmBench checkout and local benchmark datasets
+/HarmBench/
+/benchmarks/data/
+
+# Local caches
+.cache/
